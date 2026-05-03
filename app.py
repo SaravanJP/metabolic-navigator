@@ -4,7 +4,7 @@ import PIL.Image
 import os
 
 # --- APP CONFIGURATION ---
-st.set_page_config(page_title="Metabolic Navigator", page_icon="🥗")
+st.set_page_config(page_title="Saravan's Metabolic Navigator", page_icon="🥗")
 
 # Sidebar for Setup
 with st.sidebar:
