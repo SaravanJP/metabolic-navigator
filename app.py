@@ -7,10 +7,11 @@ import os
 st.set_page_config(page_title="Saravan's Metabolic Navigator", page_icon="🥗")
 
 # Sidebar for Setup
-with st.sidebar:
-    st.title("Settings")
-    api_key = "AIzaSyCCPk-vSGua_CVLaIHvhftIjF52V56ZxDI"
-    st.info("This agent helps manage nutrition for joint health and BMI.")
+try:
+    api_key = st.secrets["GEMINI_KEY"]
+except:
+    st.error("API Key not found in secrets.toml!")
+    st.stop()
 
 # --- AGENT LOGIC ---
 SYSTEM_INSTRUCTIONS = """
