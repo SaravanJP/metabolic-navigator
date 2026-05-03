@@ -41,7 +41,7 @@ def analyze_meal(uploaded_image, key):
         return response.text
 
 # --- USER INTERFACE ---
-st.title("🥗 Metabolic Navigator")
+st.title("🥗 Saravan's Metabolic Navigator")
 st.write("Take a photo of your meal for an instant health & joint-impact check.")
 
 # Camera/Upload Widget
